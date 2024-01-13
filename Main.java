@@ -3,6 +3,7 @@ import java.util.*;
 public class Main {
     public static void main(String[]args){
         Scanner input1 = new Scanner(System.in);
+        int [] numbers = new int[3];
         System.out.println("Enter first number");
         int num1 = input1.nextInt();
 
