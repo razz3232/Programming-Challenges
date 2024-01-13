@@ -8,28 +8,11 @@ public class Main {
             System.out.println("Enter number"+(x+1)+ ": ");
             numbers[x] = input.nextInt();
         }
-        System.out.println("Enter first number");
-        int num1 = input1.nextInt();
-
-        Scanner input2 = new Scanner(System.in);
-        System.out.println("Enter second number");
-        int num2 = input2.nextInt();
-
-        Scanner input3 = new Scanner(System.in);
-        System.out.println("Enter third number");
-        int num3 = input3.nextInt();
-
-        if(num1 == num2 && num2 == num3){
+        if(numbers[0] == numbers[1] && numbers[1] == numbers[2]){
             System.out.println("All Numbers are Equal");
         }
-        else if(num1 > num2 && num1 > num3){
-            System.out.println(num1+" is the largest Largest");
-        }
-        else if (num2 > num1 && num2 > num3 ){
-                System.out.println(num2+" is the Largest");
-        }
-        else if (num3 > num1 && num3 > num2){
-            System.out.println(num3+" is the Largest");
+        else if(numbers[0] > numbers[1] && numbers[0] > numbers[2]){
+            System.out.println(numbers+" is the largest Largest");
         }
         else
         System.out.println("error");
