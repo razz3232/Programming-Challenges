@@ -2,8 +2,12 @@ import java.util.*;
 
 public class Main {
     public static void main(String[]args){
-        Scanner input1 = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         int [] numbers = new int[3];
+        for(int x = 1; x<3;x++){
+            System.out.println("Enter number"+(x+1)+ ": ");
+            numbers[x] = input.nextInt();
+        }
         System.out.println("Enter first number");
         int num1 = input1.nextInt();
 
@@ -19,13 +23,13 @@ public class Main {
             System.out.println("All Numbers are Equal");
         }
         else if(num1 > num2 && num1 > num3){
-            System.out.println(num1+"Largest");
+            System.out.println(num1+" is the largest Largest");
         }
         else if (num2 > num1 && num2 > num3 ){
-                System.out.println(num2+"Largest");
+                System.out.println(num2+" is the Largest");
         }
         else if (num3 > num1 && num3 > num2){
-            System.out.println(num3+"Largest");
+            System.out.println(num3+" is the Largest");
         }
         else
         System.out.println("error");
